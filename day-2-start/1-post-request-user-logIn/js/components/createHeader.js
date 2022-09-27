@@ -8,8 +8,8 @@ function createHeader() {
   console.log("userName: ", name);
 
   let authLink = `<a href="./login.html">LogIn</a>`;
-
-  if (user) {
+  console.log(user);
+  if (user.name) {
     authLink = `<span>Hei ${name}</span>`;
   }
 
