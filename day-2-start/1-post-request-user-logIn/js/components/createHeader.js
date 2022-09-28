@@ -15,10 +15,10 @@ function createHeader() {
 
   navBar.innerHTML = `
   <ul class="flex gap-x-4">
-    <li class="p-4">
+    <li class="p-8">
         <a href="./index.html">Home</a>
     </li>
-    <li class="p-4">
+    <li class="p-8">
         ${authLink}
     </li>
 </ul>`;
