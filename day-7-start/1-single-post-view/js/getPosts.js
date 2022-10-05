@@ -38,7 +38,7 @@ if (!accessToken) {
           const createdDate = post.created;
           const postID = post.id;
           console.log(postID);
-          const daysSinceCreated = now.diff(createdDate, "days");
+          const daysSinceCreated = now.diff(createdDate, "hours");
 
           return `
                 <li class="relative px-4 py-5 bg-white focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 hover:bg-gray-50">
@@ -50,7 +50,7 @@ if (!accessToken) {
                             <p class="text-sm text-gray-500 truncate">${postTitle}</p>
                         </a>
                     </div>
-                    <time datetime="2021-01-27T16:35" class="flex-shrink-0 text-sm text-gray-500 whitespace-nowrap">${daysSinceCreated} d
+                    <time datetime="2021-01-27T16:35" class="flex-shrink-0 text-sm text-gray-500 whitespace-nowrap">${daysSinceCreated} h
                         ago
                     </time>
                 </div>
